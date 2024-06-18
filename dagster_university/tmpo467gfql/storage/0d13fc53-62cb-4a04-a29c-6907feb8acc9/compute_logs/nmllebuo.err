@@ -1,0 +1,5 @@
+[32m2024-06-18 11:15:11 +0200[0m - dagster - [34mDEBUG[0m - adhoc_request_job - 0d13fc53-62cb-4a04-a29c-6907feb8acc9 - 1092652 - LOGS_CAPTURED - Started capturing logs in process (pid: 1092652).
+[32m2024-06-18 11:15:11 +0200[0m - dagster - [34mDEBUG[0m - adhoc_request_job - 0d13fc53-62cb-4a04-a29c-6907feb8acc9 - 1092652 - adhoc_request - STEP_START - Started execution of step "adhoc_request".
+[32m2024-06-18 11:15:13 +0200[0m - dagster - [34mDEBUG[0m - adhoc_request_job - 0d13fc53-62cb-4a04-a29c-6907feb8acc9 - 1092652 - adhoc_request - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2024-06-18 11:15:13 +0200[0m - dagster - [34mDEBUG[0m - adhoc_request_job - 0d13fc53-62cb-4a04-a29c-6907feb8acc9 - 1092652 - adhoc_request - ASSET_MATERIALIZATION - Materialized value adhoc_request.
+[32m2024-06-18 11:15:14 +0200[0m - dagster - [34mDEBUG[0m - adhoc_request_job - 0d13fc53-62cb-4a04-a29c-6907feb8acc9 - 1092652 - adhoc_request - STEP_SUCCESS - Finished execution of step "adhoc_request" in 2.79s.

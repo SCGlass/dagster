@@ -1,5 +1,0 @@
-[32m2024-06-17 11:20:48 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - 07fcfe0b-4e31-4922-b36b-1498e2eb0a48 - 704491 - LOGS_CAPTURED - Started capturing logs in process (pid: 704491).
-[32m2024-06-17 11:20:48 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - 07fcfe0b-4e31-4922-b36b-1498e2eb0a48 - 704491 - trips_by_week - STEP_START - Started execution of step "trips_by_week".
-[32m2024-06-17 11:20:48 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - 07fcfe0b-4e31-4922-b36b-1498e2eb0a48 - 704491 - trips_by_week - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
-[32m2024-06-17 11:20:48 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - 07fcfe0b-4e31-4922-b36b-1498e2eb0a48 - 704491 - trips_by_week - ASSET_MATERIALIZATION - Materialized value trips_by_week.
-[32m2024-06-17 11:20:48 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - 07fcfe0b-4e31-4922-b36b-1498e2eb0a48 - 704491 - trips_by_week - STEP_SUCCESS - Finished execution of step "trips_by_week" in 530ms.

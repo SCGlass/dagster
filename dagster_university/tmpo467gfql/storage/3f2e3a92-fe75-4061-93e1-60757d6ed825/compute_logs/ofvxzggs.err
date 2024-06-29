@@ -1,0 +1,28 @@
+[32m2024-06-29 13:17:28 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_1 - 3f2e3a92-fe75-4061-93e1-60757d6ed825 - 1854971 - LOGS_CAPTURED - Started capturing logs in process (pid: 1854971).
+[32m2024-06-29 13:17:28 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_1 - 3f2e3a92-fe75-4061-93e1-60757d6ed825 - 1854971 - taxi_trips_file - STEP_START - Started execution of step "taxi_trips_file".
+[32m2024-06-29 13:17:32 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB_1 - 3f2e3a92-fe75-4061-93e1-60757d6ed825 - 1854971 - taxi_trips_file - STEP_FAILURE - Execution of step "taxi_trips_file" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "taxi_trips_file"::
+
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+
+Stack Trace:
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 468, in iterate_with_context
+    next_output = next(iterator)
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/home/glass/Github/dagster/dagster_university/dagster_university/assets/trips.py", line 27, in taxi_trips_file
+    num_rows = len(pd.read_parquet(constants.TAXI_TRIPS_TEMPLATE_FILE_PATH.format(month_to_fetch)))
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/pandas/io/parquet.py", line 651, in read_parquet
+    impl = get_engine(engine)
+  File "/home/glass/Github/dagster/venv/lib/python3.10/site-packages/pandas/io/parquet.py", line 67, in get_engine
+    raise ImportError(
+[0m
